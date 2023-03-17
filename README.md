@@ -1,10 +1,10 @@
 ## Install tensorflow
 pip install tensorflow
 
-##Install tf2onnx
+## Install tf2onnx (https://github.com/onnx/tensorflow-onnx)
 pip install -U tf2onnx
 
-##Convert tensorflow model to onnx
+## Convert tensorflow model to onnx
 python -m tf2onnx.convert --saved-model tensorflow-model-path --output model.onnx
 
 ## Model output
