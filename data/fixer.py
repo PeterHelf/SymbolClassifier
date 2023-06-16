@@ -43,8 +43,8 @@ for index, row in dataframe.iterrows():
             newrow.append(part + '.' + data[inner_index + 1])
             # skip next part
             inner_index += 2
-    newdf = newdf.append(pd.Series(newrow), ignore_index=True)
+    newdf = newdf._append(pd.Series(newrow), ignore_index=True)
 
 print(newdf)
-# to csv
-newdf.to_csv('dataset1_fixed.csv', index=False, header=False)
+# to csv, no scientific notation
+newdf.to_csv('dataset1_fixed.csv', index=False, header=False, float_format='%.10f')
