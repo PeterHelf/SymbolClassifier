@@ -1,6 +1,0 @@
-Varianten 1 sind generell vorsichtig und sauber gezeichnet.
-Varianten 2 sind teilweise unvorsichtiger "während ich einen Schritt mache" oder etwas schneller / "geschwungener" gezeichnet.
-
-Jede Datei beinhaltet zwische 60-80 samples
-
-Fire Rune lässt sich nicht viel anders zeichnen. Dadurch gibt es eine datei mit 110 samples

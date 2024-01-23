@@ -4,7 +4,7 @@ import pandas as pd
 
 # read csv from dataset1.csv
 
-with open('dataset1.csv', 'r') as file:
+with open('3DMaster_dataset.csv', 'r') as file:
     # pd dataframe from csv
     dataframe = pd.read_csv(file, delimiter=';', header=None)
 
@@ -43,8 +43,8 @@ for index, row in dataframe.iterrows():
             newrow.append(part + '.' + data[inner_index + 1])
             # skip next part
             inner_index += 2
-    newdf = newdf._append(pd.Series(newrow), ignore_index=True)
+    newdf = newdf.append(pd.Series(newrow), ignore_index=True)
 
 print(newdf)
 # to csv, no scientific notation
-newdf.to_csv('dataset1_fixed.csv', index=False, header=False, float_format='%.10f')
+newdf.to_csv('3DMaster_dataset_fixed.csv', index=False, header=False, float_format='%.10f')
