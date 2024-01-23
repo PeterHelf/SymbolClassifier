@@ -7,6 +7,8 @@ pip install -U tf2onnx
 ## Convert tensorflow model to onnx
 python -m tf2onnx.convert --saved-model tensorflow-model-path --output model.onnx
 
+python -m tf2onnx.convert --saved-model model_3dmaster_with_other_transformer --outpu model_3dmaster_with_other_transformer.onnx
+
 ## Model output
 ### model_with_other
 model_with_other should output an array of size 7.
